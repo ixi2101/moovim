@@ -20,6 +20,7 @@ vim.keymap.set('n', 'gd', builtin.lsp_definitions, { desc = 'Telescope definitio
 vim.keymap.set('n', 'gO', builtin.lsp_document_symbols, { desc = 'Telescope symbols' })
 vim.keymap.set('n', '<leader>cr', vim.lsp.buf.rename, {desc = 'Lsp rename'})
 vim.keymap.set('n', '<leader>cf', vim.lsp.buf.format, {desc = 'Lsp rename'})
+vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {desc = 'Lsp code action'})
 
 -- OIL
 require("oil").setup()
