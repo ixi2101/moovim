@@ -27,6 +27,10 @@ require("oil").setup()
 
 -- LSP 
 vim.lsp.enable('clangd')
+vim.lsp.enable('basedpyright')
+vim.lsp.enable('zls')
+
+vim.cmd.colorscheme("gruber-darker")
 
 -- TREESITTER
 require("nvim-treesitter.configs").setup{
